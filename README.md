@@ -142,5 +142,20 @@ Windows Server 2022
 
 ## Step 4: Install Active Directory Domain Services
 
+In this image, I right-clicked on the Windows logo, clicked "RUN" and typed in "wf.msc"
+<img width="3360" height="1950" alt="Screenshot 2026-06-23 at 11 38 47 PM" src="https://github.com/user-attachments/assets/4c519432-f3e5-49e1-8fa5-aced3c03c92b" />
 
+
+
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-23 at 11 40 24 PM" src="https://github.com/user-attachments/assets/90a47d98-ede7-4844-aca0-a779870e0d45" />
+
+
+
+
+
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-23 at 11 52 49 PM" src="https://github.com/user-attachments/assets/760a2cd2-72c5-4e1f-9e39-8e776d407743" />
 
