@@ -4,7 +4,9 @@
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This project demonstrates the deployment and configuration of a traditional on-premises Active Directory environment hosted entirely within Microsoft Azure Virtual Machines.
+
+The lab includes the creation of a Domain Controller, DNS configuration, organizational units (OUs), user account management, group policy implementation, and domain joining client machines to simulate a real-world enterprise environment.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -17,27 +19,90 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- Azure Virtual Machines
+- Azure Virtual Network
+- Azure Network Security Groups
+- Remote Desktop Protocol (RDP)
+- Windows Server 2022
+- Windows 10 Pro
+- Active Directory Domain Services (AD DS)
+- DNS
+- Group Policy Management
+- PowerShell
 
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- ## High-Level Deployment and Configuration Steps
+
+1. Create Azure Resource Group
+2. Deploy Virtual Network and Subnet
+3. Create Domain Controller Virtual Machine
+4. Install Active Directory Domain Services
+5. Promote Server to Domain Controller
+6. Configure DNS
+7. Create Organizational Units
+8. Create Users and Security Groups
+9. Deploy Client Virtual Machine
+10. Join Client Machine to Domain
+11. Verify Authentication and DNS Resolution
+12. Test User Logins
+
+
+## Skills Demonstrated
+
+- Active Directory Administration
+- Azure Virtual Machine Deployment
+- DNS Configuration
+- Windows Server Management
+- User Account Administration
+- Organizational Unit Management
+- Group Policy Fundamentals
+- PowerShell Automation
+- Remote Desktop Troubleshooting
+- Identity and Access Management
+
+
+
 
 <h2>Deployment and Configuration Steps</h2>
+
+## Step 1: Create Azure Resource Group
+
+Create a dedicated Resource Group to contain all lab resources.
+
+## Actions
+
+- Log into Azure Portal
+- Navigate to Resource Groups
+- Click Create
+- Name the Resource Group
+
 
 <p>
 <img width="1909" height="912" alt="Active directory Lab 1" src="https://github.com/user-attachments/assets/9f3799d4-92c8-46de-8825-336f0b69511b" />
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+
+  
+## Step 2: Create Virtual Network
+
+After creating the resource group, create the virtual network and add it to the resource group as well
+
+## Configuration
+VNET Name: Active-Directory-VNET
+
+Address Space:
+10.0.0.0/16
+
+Subnet:
+10.0.1.0/24
 </p>
 <br />
 
@@ -46,27 +111,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+  
+## Step 3: Deploy Domain Controller VM
+
+VM Name: dc-1
+
+OS/Image:
+Windows Server 2022
+
 <br />
 
 <p>
 <img width="1911" height="912" alt="active directory lab3(VMachines)" src="https://github.com/user-attachments/assets/599ea761-77ef-463f-a631-496b2d35fc5f" />
 
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+
 
 
 
 
 <img width="1908" height="949" alt="Screenshot 2026-06-23 221520" src="https://github.com/user-attachments/assets/e6ecb639-5d95-4f01-acc3-1ab737e7476c" />
 
+</p>
+<p>
+  
 
 
 
+</p>
+<br />
+
+## Step 4: Install Active Directory Domain Services
 
 
 
