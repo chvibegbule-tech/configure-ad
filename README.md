@@ -219,3 +219,20 @@ Log back into dc-1 as jane_admin
 
 
 
+
+
+## 10: Test User Logins
+
+Log back into client-1 as a user.
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-29 at 9 56 31 AM" src="https://github.com/user-attachments/assets/f9b1b66d-d5ee-4934-8b5c-9bdb00469e54" />
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-29 at 9 57 47 AM" src="https://github.com/user-attachments/assets/759d47b0-a96f-44de-973b-7196135fd9cf" />
+
+
+
+
+
+
+
