@@ -125,11 +125,15 @@ Windows Server 2022
 <img width="1911" height="912" alt="active directory lab3(VMachines)" src="https://github.com/user-attachments/assets/599ea761-77ef-463f-a631-496b2d35fc5f" />
 
 
+After VM is created, set Domain Controller’s NIC Private IP address to be static
+
+<img width="1917" height="960" alt="Screenshot 2026-06-23 231744" src="https://github.com/user-attachments/assets/451157f8-3736-4ae6-acaf-2f833aeb241d" />
 
 
 
+<img width="1913" height="911" alt="Screenshot 2026-06-23 231931" src="https://github.com/user-attachments/assets/ccd28541-3d08-4dcf-964a-b3713b16aa70" />
 
-<img width="1908" height="949" alt="Screenshot 2026-06-23 221520" src="https://github.com/user-attachments/assets/e6ecb639-5d95-4f01-acc3-1ab737e7476c" />
+
 
 </p>
 <p>
@@ -140,7 +144,7 @@ Windows Server 2022
 </p>
 <br />
 
-## Step 4: Install Active Directory Domain Services
+## Disabling windows firewall in dc-1
 
 In this image, I right-clicked on the Windows logo, clicked "RUN" and typed in "wf.msc"
 <img width="3360" height="1950" alt="Screenshot 2026-06-23 at 11 38 47 PM" src="https://github.com/user-attachments/assets/4c519432-f3e5-49e1-8fa5-aced3c03c92b" />
@@ -155,7 +159,63 @@ In this image, I right-clicked on the Windows logo, clicked "RUN" and typed in "
 
 
 
+## set Client-1’s DNS settings to DC-1’s Private IP address
+
+After Client-1 VM is created, set Client-1’s DNS settings to DC-1’s Private IP address
+
+<img width="1908" height="911" alt="Screenshot 2026-06-23 234450" src="https://github.com/user-attachments/assets/87aacf72-5440-4c9f-b07f-273e5e96d18f" />
 
 
-<img width="3360" height="1950" alt="Screenshot 2026-06-23 at 11 52 49 PM" src="https://github.com/user-attachments/assets/760a2cd2-72c5-4e1f-9e39-8e776d407743" />
+
+## Step 4: Install Active Directory Domain Services
+
+Installing Active Directory
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 9 13 56 PM" src="https://github.com/user-attachments/assets/b771def2-788d-4893-81b2-cbee1955bd51" />
+
+
+
+## Step 5: Promote Server to Domain Controller
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 9 24 15 PM" src="https://github.com/user-attachments/assets/2af3f98c-f606-41bc-b18e-785340343736" />
+
+## Log back into dc-1 as the domain controller
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 9 49 30 PM" src="https://github.com/user-attachments/assets/1d3d9e14-20b9-4092-aa24-ce1c9e2a01c5" />
+
+
+## Step 6: Create Organizational Units
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 10 24 58 PM" src="https://github.com/user-attachments/assets/78bc38cb-3868-454d-9693-e689af41f5e1" />
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 10 27 11 PM" src="https://github.com/user-attachments/assets/c6b0c569-0a38-4891-b1da-d11003f72d8f" />
+
+
+
+
+## Step 7: Create Users and Security Groups
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 10 34 11 PM" src="https://github.com/user-attachments/assets/e23b0aee-7c3d-4976-bd16-3aa92bf0a9ee" />
+
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 10 40 13 PM" src="https://github.com/user-attachments/assets/0ca4bf08-e6d7-400f-9745-31f493be6960" />
+
+
+
+## Step 8: Deploy Client Virtual Machine
+
+Log back into dc-1 as jane_admin
+
+
+
+
+## Step 9: Join Client Machine to Domain
+
+
+<img width="3360" height="1950" alt="Screenshot 2026-06-28 at 11 32 47 PM" src="https://github.com/user-attachments/assets/dd0862ad-5c2b-4d26-a405-98a4154cf5c3" />
+
+
+
 
